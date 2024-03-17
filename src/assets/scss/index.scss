@@ -1,0 +1,12 @@
+@import "./reset";
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}

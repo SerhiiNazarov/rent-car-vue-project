@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AppContainer>
+    <Hero />
+    <main>
+      <ChooseUs />
+      <PopularCars />
+      <AboutUs />
+    </main>
+  </AppContainer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppContainer from "./components/shared/AppContainer.vue";
+import Hero from "./components/Hero/Hero.vue";
+import ChooseUs from "./components/ChooseUs/ChooseUs.vue";
+import PopularCars from "./components/PopularCars/PopularCars.vue";
+import AboutUs from "./components/About/AboutUs.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AppContainer,
+    Hero,
+    ChooseUs,
+    PopularCars,
+    AboutUs,
+  },
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  font-family: Poppins, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.content {
 }
 </style>
