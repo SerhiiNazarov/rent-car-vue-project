@@ -5,7 +5,9 @@
       <ChooseUs />
       <PopularCars />
       <AboutUs />
+      <DownloadApp />
     </main>
+    <AppFooter />
   </AppContainer>
 </template>
 
@@ -15,6 +17,8 @@ import Hero from "./components/Hero/Hero.vue";
 import ChooseUs from "./components/ChooseUs/ChooseUs.vue";
 import PopularCars from "./components/PopularCars/PopularCars.vue";
 import AboutUs from "./components/About/AboutUs.vue";
+import DownloadApp from "./components/DownloadApp/DownloadApp.vue";
+import AppFooter from "./components/AppFooter/AppFooter.vue";
 
 export default {
   name: "App",
@@ -24,6 +28,8 @@ export default {
     ChooseUs,
     PopularCars,
     AboutUs,
+    DownloadApp,
+    AppFooter,
   },
 };
 </script>

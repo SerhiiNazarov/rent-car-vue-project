@@ -31,7 +31,8 @@
       <div class="car-card__price">
         <p class="car-card__price-name">Price</p>
         <p class="car-card__price-number">
-          ${{ car.price }} <span class="car-card__price-span">/ day</span>
+          ${{ formattedText }}
+          <span class="car-card__price-span">/ day</span>
         </p>
       </div>
       <button class="car-card__button" type="button">
@@ -53,6 +54,11 @@ export default {
     car: {
       type: Object,
       required: true,
+    },
+  },
+  computed: {
+    formattedText() {
+      return (this.car.price / 1000).toFixed(3);
     },
   },
 };
