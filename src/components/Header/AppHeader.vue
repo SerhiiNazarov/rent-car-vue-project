@@ -18,9 +18,9 @@
       </ul>
     </nav>
     <ul class="header__auth">
-      <li>
+      <!-- <li>
         <button class="header__auth-button" type="button">Sign In</button>
-      </li>
+      </li> -->
       <li>
         <button class="header__auth-button" type="button">Sign Out</button>
       </li>
@@ -66,11 +66,16 @@ export default {
   }
 
   &__auth-button {
-    color: #484848;
-    background: transparent;
+    display: flex;
+    align-items: center;
+    height: 43px;
+    padding: 16px 32px;
+    color: #fff;
+    background: #1572d3;
     border: none;
+    border-radius: 8px;
     font-family: "Poppins";
-    font-weight: medium;
+    font-weight: 500;
     font-size: 16px;
     cursor: pointer;
   }
